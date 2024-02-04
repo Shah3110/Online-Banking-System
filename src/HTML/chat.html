@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat | Online Banking Website</title>
+    <link href="../CSS/chatCSS.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <h1>SBI Online Banking</h1>
+        <a href="home.html"><img src="../Images/logo1.png" alt="Online Banking System"
+                title="Online Banking Website"></a>
+    </div>
+
+    <div id="content">
+        <h1 style="text-decoration: underline;">Live Chat Support</h1>
+
+        <div id="chat-container">
+            <div class="chat-message received">Welcome to SBI Online Banking! How can we assist you today?</div>
+            <div class="chat-message sent">I have a question about my account balance.</div>
+            <div class="chat-message received">Sure, I can help you with that. Could you please provide your account number?</div>
+            <div class="chat-message sent">My account number is 4567-5678-4567.</div>
+            <div class="chat-message received">Thank you! Your current balance is $1,000.99.</div>
+        </div>
+
+        <div id="chat-input">
+            <textarea placeholder="Type your message..."></textarea>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="chatScript.js"></script>
+</body>
+
+</html>
